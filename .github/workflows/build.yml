@@ -1,2 +1,7 @@
 name: my-ci
-
+on: [push]
+jobs:
+  build-deploy-docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
