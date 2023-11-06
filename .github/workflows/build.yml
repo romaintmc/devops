@@ -5,3 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: ls
+      - uses: docker/build-push-action@v5
+        with:
+          #push: true
+          tags: getting-started:latest
