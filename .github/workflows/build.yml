@@ -9,4 +9,4 @@ jobs:
       - uses: docker/build-push-action@v5
         with:
           push: true
-          tags: getting-started:latest
+          tags: romaintmc/getting-started:latest
